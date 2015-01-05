@@ -26,13 +26,17 @@ CREATE TABLE Users(
         nbr_Participation_Volunteer              Int ,
         Staff                                    Bool ,
         nbr_participation_Concert_Staff          Int ,
-        Merchant                                 Bool ,
-        name_Merchant                            Varchar (50) ,
-        acronyms_Merchant                        Varchar (25) ,
-        mission_Merchant                         Varchar (200) ,
-        email_Merchant                           Varchar (50) ,
-        website_Merchant                         Varchar (100) ,
         PRIMARY KEY (id_User )
+);
+
+CREATE TABLE Merchant(
+        id_Merchant       int (11) Auto_increment  NOT NULL ,
+        name_Merchant     Varchar (50) NOT NULL ,
+        acronyms_Merchant Varchar (25) ,
+        mission_Merchant  Varchar (200) NOT NULL ,
+        email_Merchant    Varchar (50) ,
+        website_Merchant  Varchar (100) ,
+        PRIMARY KEY (id_Merchant )
 );
 
 
@@ -140,7 +144,7 @@ CREATE TABLE Speciality(
 
 CREATE TABLE Adress(
         id_adress  int (11) Auto_increment  NOT NULL ,
-        adress     Varchar (100) ,
+        adress     Varchar (100) NOT NULL ,
         postalcode Int NOT NULL ,
         city       Varchar (50) NOT NULL ,
         department Varchar (25) NOT NULL ,
@@ -271,13 +275,29 @@ CREATE TABLE Role(
         FOREIGN KEY (id_Spe) REFERENCES Speciality(id_Spe)
 );
 
+CREATE TABLE CanBe(
+        id_User     Int NOT NULL ,
+        id_Merchant Int NOT NULL ,
+        PRIMARY KEY (id_User ,id_Merchant ),
+        FOREIGN KEY (id_User) REFERENCES users(id_User),
+        FOREIGN KEY (id_Merchant) REFERENCES Merchant(id_Merchant)
+);
+
 
 CREATE TABLE UsersAdress(
         id_User   Int NOT NULL ,
         id_adress Int NOT NULL ,
         PRIMARY KEY (id_User ,id_adress ),
-        FOREIGN KEY (id_User) REFERENCES User(id_User),
-        (id_adress) REFERENCES Adress(id_adress)
+        FOREIGN KEY (id_User) REFERENCES Users(id_User),
+        FOREIGN KEY (id_adress) REFERENCES Adress(id_adress)
+);
+
+CREATE TABLE MerchantAdress(
+        id_adress   Int NOT NULL ,
+        id_Merchant Int NOT NULL ,
+        PRIMARY KEY (id_adress ,id_Merchant ),
+        FOREIGN KEY (id_adress) REFERENCES Adress(id_adress),
+        FOREIGN KEY (id_Merchant) REFERENCES Merchant(id_Merchant)
 );
 
 
