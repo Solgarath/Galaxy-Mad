@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang ="fr">
+<head>
+	<meta charset="utf-8">
+	<title></title>	
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="script/script.js"></script>
+</head>
+<body>
+
+	<!-- menu en haut à droite du site -->
+	<ul id="menu" class="invisible">
+			<li>
+				<a id="Homebtn" href="home_page.html">Accueil</a>
+			</li>
+			<li>
+				<a id="Registerbtn" href="register_page.html">S'enregistrer</a>
+			</li>
+			<li>
+				<a id="Loginbtn" href="connect_page.html">Connexion</a>
+			</li>
+			<li>
+				<a id="Accountbtn" href="account_page.html">Espace perso</a>
+			</li>
+			<li>
+				<a id="Searchbtn" href="search_page.html">Recherche</a>
+			</li>
+		</ul>
+
+		<!-- bandeau supérieur du site -->
+	<div id='top' class="header">
+		<img id="logoBtn" src="icones/galaxy-mad.png" class="ui-btn-left ui-btn-corner-all ui-btn" data-form="ui-icon" title="Home" data-role="button" role="button"><a href="home_page.html"></a></img>
+		<h3>GalaxyMad</h3>
+		<img id="NavBtn" src="icones/bares.png" class="ui-btn-right ui-btn-corner-all ui-btn" data-form="ui-icon" title="Navigation" data-role="button" role="button"></img>
+	</div>
+
+	<div id='choice'>
+		<div id="blocChoice">
+			<form>
+				<label class='whiteLabel'>Remplissez si vous faites vous partie de l'une ces catégorie</label>
+				<div id="checkMusician" data-role="collapsible">
+					<h3>Musicien</h3>
+					<label class="blackLabel">De quel instrument jouez vous principalement?</label><select id="type_Musician"></select>
+					<label class="blackLabel">Quel expérience avez-vous en tant que musicien?</label><input id="XP_Musician" type="text"/>
+					<label class="blackLabel">Quelle est votre formation musicale?</label><input id="training_Musician" type="text"/>
+					<label class="blackLabel">Quel genre de musique jouez-vous?</label><input id="inspiration_Musician" type="text"/>
+					<label class="blackLabel">Votre site web:</label><input id="website_Musician" type="text"/>
+					<input id="btnValideMusician" type="button" value="Valider"/>
+				</div>
+				<div id="checkVolunteer" data-role="collapsible" >
+					<h3>Bénévole</h3>
+					<label class="blackLabel">Quelles sont vos spécialitées?</label>
+						<input id="cbxCostume" type="checkbox"/><label class="blackLabel" for="cbxCostume">Costumier/Habilleur</label>
+						<input id="cbxDecorator" type="checkbox"/><label class="blackLabel" for="cbxDecorator">Décorateur/Scénographe</label>
+						<input id="cbxLighting" type="checkbox"/><label class="blackLabel" for="cbxLighting">Eclairagiste de spectacle</label>
+						<input id="cbxSoundEngineer" type="checkbox"/><label class="blackLabel" for="cbxSoundEngineer">Ingénieur du son</label>
+						<input id="cbxMakeupArtist" type="checkbox"/><label class="blackLabel" for="cbxMakeupArtist">Maquilleur</label>
+						<input id="cbxSteward" type="checkbox"/><label class="blackLabel" for="cbxSteward">Régisseur</label>
+						<input id="cbxCoach" type="checkbox"/><label class="blackLabel" for="cbxCoach">Coach</label>
+						<input id="cbxCableLayer" type="checkbox"/><label class="blackLabel" for="cbxCableLayer">Câbleur</label>
+						<input id="cbxFitter" type="checkbox"/><label class="blackLabel" for="cbxFitter">Installeur</label>
+						<input id="cbxSecurityOfficer" type="checkbox"/><label class="blackLabel" for="cbxSecurityOfficer">Agent de sécurité</label>
+						<input id="btnValideVolunteer" type="button" value="Valider"/>
+				</div>
+				<div id="checkMerchant" data-role="collapsible">
+					<h3>Marchand</h3>
+					<label class="blackLabel">Nom de votre commerce</label><input type="text"/>
+					<label class="blackLabel">Sigle</label><input type="text"/>
+					<label class="blackLabel">Quelle activité pratiquez-vous?</label><input type="text"/>
+					<label class="blackLabel">Adresse</label><input type="text"/>
+					<label class="blackLabel">Code postal</label><input type="text"/>
+					<label class="blackLabel">Ville</label><input type="text"/>
+					<label class="blackLabel">Département</label><input type="text"/>
+					<label class="blackLabel">Pays</label><input type="text"/>
+					<label class="blackLabel">Téléphone mobile</label><input type="text"/>
+					<label class="blackLabel">Téléphone fixe</label><input type="text"/>
+					<label class="blackLabel">Email</label><input type="text"/>
+					<label class="blackLabel">Site web</label><input type="text"/>
+					<input id="btnValideMerchant" type="button" value="Valider"/>
+				</div>
+				<input id="btnCloseChecks" type="button" value="Terminer"/>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+/*header de la page*/
+.header{
+	background-color: #056666;
+	height: 50px;
+	display: block;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+}
+
+.header h3{
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	color: #ffffff;
+	height:50px;
+	width:250px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 10px;
+	text-shadow: none;
+}
+
+.ui-btn-left, .ui-btn-right{
+	margin-left: 15px;
+	padding: 0px;
+	margin-top: 5px;
+}
+
+.ui-btn-right{
+	margin-right: 15px;
+}
+
+/*styles communs*/
+
+#home, #login, #register, #search, #account, #choice{
+	background-color: #009798;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50px;
+	bottom: 0px;
+}
+
+#user{
+	background-color: #009798;
+	width: 100%;
+	height: 230%;
+	position: absolute;
+	top: 50px;
+	bottom: 0px;
+}
+
+.blackLabel{
+	color: #000000;
+}
+
+.whiteLabel{
+	color: #ffffff;
+}
+/*page d'accueil*/
+
+#home p{
+	margin-right:25px;
+	margin-left: 25px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-shadow: none;
+	color: #ffffff;
+}
+
+/*Page de connexion*/
+
+#blocLogin{
+	border: solid 1px;
+	border-radius: 15px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 5%;
+	background-color: #056666;
+	padding: 5px;
+	text-shadow: none;
+}
+
+#Remember{
+/*	width:13%;*/
+	padding-bottom: 15px;
+}
+/*page d'enregistrement*/
+
+#blocRegister{
+	border: solid 1px;
+	border-radius: 15px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 5%;
+	background-color: #056666;
+	padding: 5px;
+	text-shadow: none;
+}
+
+#blocRegister label{
+	color: #ffffff;
+}
+
+#divBtnRegister{
+	margin-top: 45px;
+}
+
+/*page de compte utilisateur*/
+
+#blocModifie{
+	border: solid 1px;
+	border-radius: 15px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 5%;
+	background-color: #056666;
+	padding: 5px;
+	text-shadow: none;
+}
+
+#blocUsers{
+	border: solid 1px;
+	border-radius: 15px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 10%;
+	background-color: #056666;
+	padding: 5px;
+	text-shadow: none;
+}
+
+#radioHomme, #radiofemme{
+	float: left;
+	display: inline;
+}
+.ui-radio{
+	width: 50%;
+	float: left;
+}
+
+#blocChoice{
+	border: solid 1px;
+	border-radius: 15px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 5%;
+	background-color: #056666;
+	padding: 5px;
+	text-shadow: none;	
+}
+
+#btnModifie{
+	margin-top: 25px;
+}
+
+/*Page de recherche*/
+
+#blocSearch{
+	border: solid 1px;
+	border-radius: 15px;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 5%;
+	background-color: #056666;
+	padding: 5px;
+	text-shadow: none; 
+}
+
+/*classes de visibilitées*/
+
+.invisible{
+	visibility: hidden;
+}
+
+.visible{
+	visibility: visible;
+}
+
+/*menu déroulant*/
+
+#menu, #menu ul{
+	list-style: none;
+	line-height: 20px;
+	text-align: right;
+	margin-top: 0px;
+	padding-left:0px;
+}
+
+#menu{
+	font-weight : bold;
+	font-family : Arial;
+	font-size : 12px;
+	position: absolute;
+	top: 50px;
+	right: 15px;
+	z-index: 150;
+}
+
+#menu a {
+	display: block;
+	padding: 5px;
+	border: solid 1px;
+	border-color: #000000;
+	background: #002E3D;
+	color: #ffffff;
+	text-decoration: none;
+	width: 120px;
+	text-shadow: none;
+}
+
+#menu li{
+	border-right: 1px solid transparent;
+}
+
+#sex_User input{
+	display: inline-block;
+}

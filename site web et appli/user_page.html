@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang ="fr">
+<head>
+	<meta charset="utf-8">
+	<title></title>	
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="script/script.js"></script>
+</head>
+
+<body>
+	<!-- menu en haut à droite du site -->
+	<ul id="menu" class="invisible">
+			<li>
+				<a id="Homebtn" href="home_page.html">Accueil</a>
+			</li>
+			<li>
+				<a id="Registerbtn" href="register_page.html">S'enregistrer</a>
+			</li>
+			<li>
+				<a id="Loginbtn" href="connect_page.html">Connexion</a>
+			</li>
+			<li>
+				<a id="Accountbtn" href="account_page.html">Espace perso</a>
+			</li>
+			<li>
+				<a id="Searchbtn" href="search_page.html">Recherche</a>
+			</li>
+		</ul>
+
+		<!-- bandeau supérieur du site -->
+	<div id='top' class="header">
+		<img id="logoBtn" src="icones/galaxy-mad.png" class="ui-btn-left ui-btn-corner-all ui-btn" data-form="ui-icon" title="Home" data-role="button" role="button"><a href="home_page.html"></a></img>
+		<h3>GalaxyMad</h3>
+		<img id="NavBtn" src="icones/bares.png" class="ui-btn-right ui-btn-corner-all ui-btn" data-form="ui-icon" title="Navigation" data-role="button" role="button"></img>
+	</div>
+
+	<div id="user">	
+		<div id="blocUsers">
+			<form>
+				<label class='whiteLabel'>Pseudo</label><input type="text" id="username_User" readonly></input>
+				<label class='whiteLabel'>Genre</label>
+					<div id="sex_User">
+						<input name="radioGenre" id="radioMen" type="radio" value="M."><label class="blackLabel" for="radioMen">M.</label></input>
+						<input name="radioGenre" id="radioWomen" type="radio" value="Mme"><label class="blackLabel" for="radioWomen">Mme.</label></input>
+					</div> 
+				<label class='whiteLabel'>Nom</label><input type="text"/>
+				<label class='whiteLabel'>Prénom</label><input type="text"/>
+				<label class='whiteLabel'>Date de naissance</label><input type="date"/>
+				<label class='whiteLabel'>Adresse</label><input type="text"/>
+				<label class='whiteLabel'>Code postal</label><input id="postalcode_User" type="text" size="5"/>
+				<label class='whiteLabel'>Ville</label><select id="city_User"></select>
+				<label class='whiteLabel'>Département</label><input type="text" id="department_User" readonly/>
+				<label class='whiteLabel'>Pays</label><input type="text" id="country_User" readonly/>
+				<label class='whiteLabel'>Téléphone mobile</label><input id="celular_User" type="text" size="10"/>
+				<label class='whiteLabel'>Téléphone fixe</label><input id="phone_User" type="text" size="10"/>
+				<label class='whiteLabel'>Email</label><input id="email_User" type="email"/>
+				<div id="btnModifie">
+					<input id="btnNextUsers" type="button" value="Suivant"><a href='#top'></a></input>
+					<input id="btnCancelUsers" type="button" value="Annuler"/>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

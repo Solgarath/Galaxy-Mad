@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang ="fr">
+<head>
+	<meta charset="utf-8">
+	<title></title>	
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="script/script.js"></script>
+</head>
+<body>
+
+	<!-- menu en haut à droite du site -->
+	<ul id="menu" class="invisible">
+			<li>
+				<a id="Homebtn" href="home_page.html">Accueil</a>
+			</li>
+			<li>
+				<a id="Registerbtn" href="register_page.html">S'enregistrer</a>
+			</li>
+			<li>
+				<a id="Loginbtn" href="connect_page.html">Connexion</a>
+			</li>
+			<li>
+				<a id="Accountbtn" href="account_page.html">Espace perso</a>
+			</li>
+			<li>
+				<a id="Searchbtn" href="search_page.html">Recherche</a>
+			</li>
+		</ul>
+
+		<!-- bandeau supérieur du site -->
+	<div id='top' class="header">
+		<img id="logoBtn" src="icones/galaxy-mad.png" class="ui-btn-left ui-btn-corner-all ui-btn" data-form="ui-icon" title="Home" data-role="button" role="button"><a href="home_page.html"></a></img>
+		<h3>GalaxyMad</h3>
+		<img id="NavBtn" src="icones/bares.png" class="ui-btn-right ui-btn-corner-all ui-btn" data-form="ui-icon" title="Navigation" data-role="button" role="button"></img>
+	</div>
+
+	<div id="search">
+		<div id="blocSearch">
+			<div>
+				<input type="search" name="search_bar" id="searchBar" placeholder="Recherche"/>
+			</div>
+			<div id="advancedSearch" data-role="collapsible" data-theme="a" data-content-theme="a">
+				<h3>Recherche avancée</h3>
+				<input id="cbxMusician" type="checkbox"/><label for="cbxMusician">Musicien</label>
+				<input id="cbxBand" type="checkbox"/><label for="cbxBand">Groupe</label>
+				<input id="cbxStyle" type="checkbox"/><label for="cbxStyle">Style</label>
+				<input id="cbxVolunteer" type="checkbox"/><label for="cbxVolunteer">Bénévole</label>
+				<input id="cbxMerchant" type="checkbox"/><label for="cbxMerchant">Commerçant</label>
+				<input id="cbxCity" type="checkbox"/><label for="cbxCity">Ville</label>
+				<input id="cbxDepartment" type="checkbox"/><label for="cbxDepartment">Département</label>
+			</div>
+			<input id="btnSearch" type="button" value="Rechercher"/>
+		</div>		
+	</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang ="fr">
+<head>
+	<meta charset="utf-8">
+	<title></title>	
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="script/script.js"></script>
+</head>
+<body>
+
+	<ul id="menu" class="invisible">
+			<li>
+				<a id="Homebtn" href="home_page.html">Accueil</a>
+			</li>
+			<li>
+				<a id="Registerbtn" href="register_page.html">S'enregistrer</a>
+			</li>
+			<li>
+				<a id="Loginbtn" href="connect_page.html">Connexion</a>
+			</li>
+			<li>
+				<a id="Accountbtn" href="account_page.html">Espace perso</a>
+			</li>
+			<li>
+				<a id="Searchbtn" href="search_page.html">Recherche</a>
+			</li>
+		</ul>
+
+		<!-- bandeau supérieur du site -->
+	<div id='top' class="header">
+		<img id="logoBtn" src="icones/galaxy-mad.png" class="ui-btn-left ui-btn-corner-all ui-btn" data-form="ui-icon" title="Home" data-role="button" role="button"><a href="home_page.html"></a></img>
+		<h3>GalaxyMad</h3>
+		<img id="NavBtn" src="icones/bares.png" class="ui-btn-right ui-btn-corner-all ui-btn" data-form="ui-icon" title="Navigation" data-role="button" role="button"></img>
+	</div>
+
+	<div id="register">
+		<form id="blocRegister">
+			<label class='whiteLabel'>Pseudo</label><input type="text" />
+			<label class='whiteLabel'>Mot de passe</label><input type="password" />
+			<label class='whiteLabel'>Répétez mot de passe</label><input type="password" />
+			<label class='whiteLabel'>Adresse mail</label><input type="text" />
+			<label class='whiteLabel'>Répétez adresse mail</label><input type="text" />
+			<div id="divBtnRegister">
+				<input type="button" value="Valider" />
+				<input type="reset" value="Réinitialiser" />
+				<input id="btnCancelRegister" type="button" value="Annuler" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>
