@@ -1,3 +1,14 @@
+/* ###################
+   #                 #
+   #   Galaxy-MAD    #
+   #                 #
+   ###################
+   
+   Créé par Franck V. et Julien L.
+   pour l'association Galaxy MAD.
+   
+*/   
+
 DROP DATABASE IF EXISTS GalaxyMad;
 
 CREATE DATABASE GalaxyMad ;

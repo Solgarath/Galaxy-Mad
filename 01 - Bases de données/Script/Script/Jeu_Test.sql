@@ -1,5 +1,15 @@
-USE GalaxyMad ;
+/* ###################
+   #                 #
+   #   Galaxy-MAD    #
+   #                 #
+   ###################
+   
+   Créé par Franck V. et Julien L.
+   pour l'association Galaxy MAD.
+   
+*/   
 
+USE GalaxyMad ;
 
 INSERT INTO Users (username_User, sex_User, lastname_User, firstname_User, birthday_User, email_User, nbr_participation_Concert_User, Musician, type_Musician, XP_Musician, training_Musician, inspiration_Musician, website_Musician, nbr_participation_Concert_Musician, Volunteer, nbr_Participation_Volunteer, Staff, nbr_participation_Concert_Staff) VALUES 
 ('kopecito', 'homme', 'Tesla', 'Nicolas', '1975-10-15', 'kopecito@gmail.com', 5, false, null,null,null,null,null,null, null, null ,false,null);
